@@ -1,0 +1,24 @@
+.genreButton {
+    color: rgb(20, 99, 0);
+    border: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+  
+  .genreLabel {
+    
+    font-weight: bold;
+  }
+  
+  .genreInput {
+    color: rgb(136, 255, 0);
+    background-color: #004b06;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 5px;
+  }

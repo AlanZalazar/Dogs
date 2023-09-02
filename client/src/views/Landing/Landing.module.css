@@ -1,0 +1,57 @@
+.container {
+  background-image: url("https://wallpapers.com/images/hd/cheems-f9sg89wz5bngwnbg.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; /* Cambio para que el título se muestre arriba */
+  justify-content: flex-start; /* Cambio para que el título se muestre arriba */
+  align-items: flex-start; /* Cambio para que el título se muestre a la izquierda */
+  padding: 20px; /* Añade un poco de espacio entre el título y el botón */
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 0;
+  color: white;
+  position: absolute; /* Establece la posición absoluta */
+  top: 100px; /* Ajusta la distancia desde la parte superior */
+  left: 200px; /* Ajusta la distancia desde la izquierda */
+}
+
+.startButton {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 80px;
+  left: 800px;
+  overflow: hidden;
+}
+
+.startButton:hover {
+  background-color: purple;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px rgba(255, 0, 255, 0.8);
+}
+
+@keyframes neonShadow {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 0, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 255, 0.8);
+  }
+}
+
+.startButton:hover {
+  animation: neonShadow 1s infinite;
+}

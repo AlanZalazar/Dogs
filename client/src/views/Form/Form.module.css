@@ -1,0 +1,116 @@
+.backgroundImage {
+  background-image: url('https://img.freepik.com/vector-premium/patron-perro-costuras-huellas-pata-huesos-corazones-bolas-textura-pie-gato-patron-huella-perro-huesos-textura-perro-ilustracion-vectorial-dibujada-mano-estilo-garabato-sobre-fondo-blanco_192280-1320.jpg?w=2000'); /* Cambia la ruta a la ubicación de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formGroup {
+  background-color: #ffffff57;
+  backdrop-filter: blur(10px); /* Ajusta el valor para controlar la intensidad del difuminado */
+  color: #00a70e;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="number"],
+.formGroup select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.formGroup span {
+  color: red;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.tempsContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tempsSelect {
+  width: 150px;
+  padding: 8px;
+  border: 2px solid #00a70e; /* Color de borde */
+  border-radius: 5px;
+  font-size: 14px;
+  color: #00a70e; /* Color del texto */
+  background-color: #0f2e3d; /* Color de fondo */
+  transition: border-color 0.3s, color 0.3s, background-color 0.3s; /* Transiciones para los cambios de color */
+}
+
+.tempsSelect select {
+  width: 150px;
+}
+
+.tempsSelect button {
+  padding: 5px 10px;
+  background-color: #004b06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tempsSelected {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.tempChip {
+  display: flex;
+  align-items: center;
+  background-color: #004b06;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tempChip button {
+  margin-left: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: #004b06;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

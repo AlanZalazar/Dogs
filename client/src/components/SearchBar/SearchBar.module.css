@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+input {
+  background-color: #002b04;
+  padding: 8px;
+  border: 3px solid rgb(136, 255, 0);
+  border-radius: 45px;
+  margin-right: 10px;
+  color: rgb(0, 204, 255);;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(136, 255, 0); /* Cambia el color del texto del placeholder aquí */
+}
+
+
+input:focus-within {
+  border-color: rgb(21, 142, 172); /* Cambia el color del borde al hacer clic en el input */
+  border-width: 3px; /* Cambia el grosor del borde al hacer clic en el input */
+  box-shadow: 0 0 5px aqua
+} 
+

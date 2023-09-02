@@ -1,0 +1,39 @@
+.card-detail {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: calc(50% + 10px);
+    transform: translate(0, -50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: #7ea87d83;
+    backdrop-filter: blur(10px);
+    color: red;
+    font-size: 18px;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%; /* La imagen ocupará al menos el 50% de la altura */
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%; /* La imagen ocupa la altura completa del contenedor */
+    max-height: calc(100% - 20px); /* Resta el espacio para el padding */
+    object-fit: cover; /* Ajusta la imagen manteniendo la proporción */
+  }
+

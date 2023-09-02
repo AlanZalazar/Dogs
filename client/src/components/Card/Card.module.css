@@ -1,0 +1,98 @@
+.card{
+    border: 1px solid rgb(199, 199, 199);
+    width: 295px;
+    height: 400px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #004b06;
+    position: relative;
+}
+
+.cardLink {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Usa el color heredado para el texto */
+}
+
+.card:hover{
+  background-color: rgb(0, 143, 136);
+  box-shadow: 0 0 5px 2px rgb(19, 110, 11);
+  color: #004b06;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+   
+    
+    
+}
+
+.card img:hover{
+  opacity: 100%;
+}
+
+
+
+.genreContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+  
+  .genreTags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -2px;
+    background-color: rgba(0, 0, 0, 0); /* Fondo negro semi-transparente */
+  color: rgb(136, 255, 0); /* Color del texto en los tags */
+  scrollbar-color: rgb(136, 255, 0) rgba(0, 0, 0, 0.5); /* Color de la barra de scroll */
+  scrollbar-width: thin; /* Ajusta el ancho de la barra de scroll (si es compatible) */
+    
+  }
+
+  
+
+  /* Define el estilo de la barra de scroll en navegadores compatibles */
+.genreTags::-webkit-scrollbar {
+  width: 6px; /* Ancho de la barra de scroll */
+}
+
+.genreTags::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 255, 0); /* Color del pulgar de la barra de scroll */
+  border-radius: 3px; /* Borde redondeado del pulgar */
+}
+  
+  .genreTag {
+    border: 1px solid aqua;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    color: aqua;
+    font-weight: bold;
+  }
+
+  .button {
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 2px;
+    color: black;
+    background-color: aqua;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.1s;
+    
+  }
+
+  .button:hover {
+    background-color: rgb(151, 117, 245); 
+    padding: 10px 20px;
+  }
+  
+  

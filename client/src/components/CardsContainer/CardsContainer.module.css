@@ -1,0 +1,20 @@
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: auto;
+    background: linear-gradient(to bottom, #a6e38d, #ffffff);
+    padding: 10px;
+    
+   
+}
+
+.noDogsMessage {
+    text-align: center;
+    font-size: 40px;
+    color: #ff0000; /* Color de texto gris */
+    margin-top: 20px;
+    margin-bottom: 250px;
+  }

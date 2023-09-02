@@ -1,0 +1,26 @@
+.mainContainer {
+  width: 100vw;
+  display: flex;
+  padding: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  z-index: 9999;
+  margin: auto;
+  padding: 10px 10px 0; /* Ajusta el espaciado en la parte superior */
+  background-color: #004b06;
+  box-shadow: 0 0 15px black;
+}
+
+.mainContainer a {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(136, 255, 0);
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+/* Estilos para los enlaces al pasar el cursor sobre ellos */
+.mainContainer a:hover {
+  color: #2babc2;
+}

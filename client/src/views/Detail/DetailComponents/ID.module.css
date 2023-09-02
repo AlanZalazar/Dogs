@@ -1,0 +1,10 @@
+.id {
+    font-weight: bold;
+    color: #00a7ce;
+    font-size: 36px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px; /* Agrega un margen para separar el elemento de los bordes */
+    backdrop-filter: blur(10px);
+  }
