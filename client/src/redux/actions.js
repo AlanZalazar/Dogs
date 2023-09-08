@@ -25,7 +25,7 @@ export const getDogs = () => {
       });
     } catch (error) {
       // Manejar cualquier error aquí si es necesario
-      console.error("Error fetching games:", error);
+      console.error("Error fetching dogs:", error);
     }
   };
 };
@@ -87,7 +87,7 @@ export const getTemps = () => {
       });
     } catch (error) {
       // Manejar cualquier error aquí si es necesario
-      console.error("Error fetching genre:", error);
+      console.error("Error fetching temps:", error);
     }
   };
 };
