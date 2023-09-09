@@ -1,5 +1,7 @@
 const axios = require("axios");
 const {Temp} = require("../db");
+require('dotenv').config();
+const {API_LINK} = process.env;
 
 const cleanTemps = async (arr) => {
   const uniqueTemperaments = [];
@@ -27,7 +29,7 @@ const cleanTemps = async (arr) => {
 };
 
 const getTemperaments = async () => {
-  const apiTempsRaw = (await axios.get(`https://api.thedogapi.com/v1/breeds`)).data;
+  const apiTempsRaw = (await axios.get(`${API_LINK}`)).data;
   const apiTemps = await cleanTemps(apiTempsRaw);
   const dbTemps = await Temp.findAll();
 const id = 1;

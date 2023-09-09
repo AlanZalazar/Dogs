@@ -2,6 +2,11 @@ const { Dog } = require("../db")
 const { Temp } = require("../db")
 const axios = require("axios");
 const { Sequelize } = require("sequelize")
+require('dotenv').config();
+const {
+  API_LINK
+} = process.env;
+
 
 const { formatDogData, cleanArray, cleanObj } = require("./utils");
 
@@ -21,7 +26,7 @@ const getDogById = async (idRaza, source) => {
     let dog;
 
     if (source === "api") {
-        const response = await axios.get(`https://api.thedogapi.com/v1/breeds/${idRaza}`);
+        const response = await axios.get(`${API_LINK}/${idRaza}`);
         dog = response.data;
     } else {
         dog = await Dog.findByPk(idRaza, { include: Temp });
@@ -38,7 +43,7 @@ const getDogById = async (idRaza, source) => {
 const getAllDogs = async () => {
     const dbDogs = await Dog.findAll({ include: Temp });
 
-    const apiDogsRaw = (await axios.get(`https://api.thedogapi.com/v1/breeds`)).data;
+    const apiDogsRaw = (await axios.get(`${API_LINK}`)).data;
     const apiDogs = cleanArray(apiDogsRaw);
 
     const formattedDbDogs = dbDogs.map(formatDogData); // Formatear perros de la base de datos
@@ -67,7 +72,7 @@ const searchDogByName = async (name) => {
     });
   
     // Buscar en la API
-    const apiDogsRaw = (await axios.get(`https://api.thedogapi.com/v1/breeds/search?q=${name}`)).data;
+    const apiDogsRaw = (await axios.get(`${API_LINK}/search?q=${name}`)).data;
     const apiDogs = [];
   
     for (const apiDogRaw of apiDogsRaw) {
