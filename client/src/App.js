@@ -3,7 +3,7 @@ import './App.css';
 import { Landing, Home, Detail, Form } from './views';
 import NavBar from './components/NavBar/NavBar';
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:3001/";
+axios.defaults.baseURL = "https://dogs-production-1521.up.railway.app/";
 
 function App() {
   
